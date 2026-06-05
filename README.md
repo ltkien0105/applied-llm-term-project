@@ -6,9 +6,9 @@
 
 | Member | Role |
 |--------|------|
-| **Hien** | Dataset curation, BERT fine-tuning (`1_Model-Finetune.ipynb`) |
-| **Nguyen** | Cascade pipeline: prompt engineering, Qwen CoT escalation, inference (`2_run_pipeline_test.ipynb`) |
-| **LE TRUNG KIEN** (M11415803) | Evaluation, baselines, metric design, error analysis (`3_evaluation_pipeline.ipynb`) |
+| **Bui The Hien** | Dataset curation, BERT fine-tuning (`1_Model-Finetune.ipynb`) |
+| **Nguyen Quoc Nguyen** | Cascade pipeline: prompt engineering, Qwen CoT escalation, inference (`2_run_pipeline_test.ipynb`) |
+| **Le Trung Kien** (M11415803) | Evaluation, baselines, metric design, error analysis (`3_evaluation_pipeline.ipynb`) |
 
 ## Architecture
 
