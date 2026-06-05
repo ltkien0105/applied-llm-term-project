@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+my-phishing-classifier/
+results/
+
+# Large test corpus — downloaded by notebook 2 from Google Drive
+Phishing_Email.csv
+# scratch review notes
+fix.md
+eval_tmp/
+
+phishing-bert-v2/
+results-v2/
+eval_tmp/
