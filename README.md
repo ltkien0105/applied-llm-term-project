@@ -64,10 +64,11 @@ All models are trained on the training corpus and evaluated on a **disjoint** te
 
 ## Known Limitations / Next Iteration
 
-1. Re-train with the prompt prefix and label suffix stripped, `max_length=512`, fixed seed.
-2. Use one canonical input format (subject + body) in both training and inference.
-3. Post-hoc calibrate BERT (Platt scaling) so the cascade threshold operates on real probabilities.
-4. The test corpus's "phishing" is promotional/bulk spam, not spear-phishing — scope is a coarse unwanted-mail detector.
+1. **Calibration is now the main bottleneck.** Post-hoc calibrate BERT (Platt / temperature scaling) so the cascade threshold operates on real probabilities — the v1→v2 experiment showed v2's gains (tuned-threshold recall 84%) are masked at the default operating point precisely because of miscalibration.
+2. **Tier input consistency.** The BERT tier classifies the body only while the Qwen escalation tier sees subject + sender + body; the subject line is unused by BERT in both training and inference.
+3. **Scope.** The test corpus's "phishing" is promotional/bulk spam, not spear-phishing — this system is a coarse unwanted-mail detector.
+
+*Resolved in v2 (`1b_Model-Finetune-v2.ipynb`): prompt-prefix/label-suffix stripping, 512-token context, fixed seed, and a body-only training format matching the cascade's inference input.*
 
 ## Artifacts
 
