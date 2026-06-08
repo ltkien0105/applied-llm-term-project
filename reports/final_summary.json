@@ -1,0 +1,47 @@
+[
+  {
+    "Model": "Majority",
+    "Accuracy": "60.50%",
+    "F1": "0.00%",
+    "Recall": "0.00%",
+    "Precision": "0.00%",
+    "ROC-AUC": "0.5000",
+    "ECE": "\u2014"
+  },
+  {
+    "Model": "Length-LR",
+    "Accuracy": "60.50%",
+    "F1": "0.00%",
+    "Recall": "0.00%",
+    "Precision": "0.00%",
+    "ROC-AUC": "0.5664",
+    "ECE": "0.0510"
+  },
+  {
+    "Model": "TF-IDF+LR",
+    "Accuracy": "61.83%",
+    "F1": "6.55%",
+    "Recall": "3.39%",
+    "Precision": "99.20%",
+    "ROC-AUC": "0.8365",
+    "ECE": "0.2982"
+  },
+  {
+    "Model": "BERT",
+    "Accuracy": "80.71%",
+    "F1": "71.22%",
+    "Recall": "60.43%",
+    "Precision": "86.70%",
+    "ROC-AUC": "0.8844",
+    "ECE": "0.1780"
+  },
+  {
+    "Model": "Cascade",
+    "Accuracy": "81.07%",
+    "F1": "71.94%",
+    "Recall": "61.45%",
+    "Precision": "86.75%",
+    "ROC-AUC": "0.8844",
+    "ECE": "0.1780"
+  }
+]
